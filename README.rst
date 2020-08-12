@@ -39,7 +39,7 @@ All dependencies are store in requirements.txt and test_requirements.txt
 Getting started
 ------------
 
-- preparing a virtual environment
+- preparing a virtual environment:
 
   ::
 
@@ -68,7 +68,7 @@ Getting started
     #runs the command:
     PYTHONPATH=. FLASK_APP=hello_world flask run
 
-- Running tests (see: http://doc.pytest.org/en/latest/capture.html):
+- Running tests:
 
   ::
 
