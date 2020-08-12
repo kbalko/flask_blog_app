@@ -23,19 +23,16 @@ W razie awarii administrator dostaje wiadomość e-mail z logami błedu. Więcej
 
 Aplikacja jest zintegrowana z:
 
-- `TravisCI <https://travis-ci.com/github/kbalko/flask_blog_app1>`_
-
-- `Gitlab <https://gitlab.com/krisbalko/flask_blog_app1>`_
+- `TravisCI <https://travis-ci.com/github/kbalko/flask_blog_app>`_
 
 - `Docker <https://hub.docker.com/r/kbalko/hello-world-printer>`_
 
 - Jenkins
 
-- `Heroku <https://dry-brushlands-36461.herokuapp.com>`_
+- `Heroku <https://enigmatic-woodland-07880.herokuapp.com>`_
 
 - `Statuscake <https://www.statuscake.com>`_
 
-- `coveralls.io <https://coveralls.io/github/kbalko/se_hello_printer_app>`_
 
 Linter tool:
 
