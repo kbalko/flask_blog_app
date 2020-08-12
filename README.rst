@@ -1,6 +1,5 @@
 
-Microblog Flask App  & Continuous Integration/Continuous Deployment
-================
+Microblog Flask App  & CI/CD
 General info
 -----------------
 
