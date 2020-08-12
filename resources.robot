@@ -6,8 +6,8 @@ Library		SeleniumLibrary
 *** Variables ***
 
 ${browser}                  Firefox
-${website}                  https://dry-brushlands-36461.herokuapp.com
-${other_user_page}          https://dry-brushlands-36461.herokuapp.com/user/Tester4
+${website}                  https://microflaskapp.herokuapp.com/
+${other_user_page}          https://microflaskapp.herokuapp.com/Tester4
 
 ${login_valid_but_taken}    Tester2
 ${login_valid_free}         Newlogin
@@ -16,7 +16,7 @@ ${pass_invalid}             Invalidpass
 ${email_valid_but_taken}    tester2@testy.pl
 ${email_valid_free}         someemail@bu.pl
 ${email_invalid}            asd23
-${test_text}                Post dodany automatycznie - Robot Framework v2
+${test_text}                Post dodany automatycznie - Robot Framework v3
 
 ${selector_login}           css: #username
 ${selector_pass}            css: #password

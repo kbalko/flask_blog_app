@@ -44,6 +44,3 @@ Następnie dzięki odpowiednim targetom zawartym pliku Makefile  i dzięki pliko
 
  ### Heroku
  Następuje deploy aplikacji na Heroku. Aplikcja dostępna pod [linkiem](https://microflaskapp.herokuapp.com/).
-
- ### Monitorowanie StatusCake
- Aplikacja jest połączona z narzędziem StatusCake, które monitoruje czy strona jest aktywyna i wysyła alert e-mail do administratora jeśli strona nie odpowiada.
