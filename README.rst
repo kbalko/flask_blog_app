@@ -8,7 +8,7 @@ Flask microblog application with Continuous Integration/Continuous Deployment.
 
 
 The application allows you to register users, log in, edit your profile, add content, view other users' content, observe / not observe other users, and reset your password via e-mail verified with a token.
-In case of failure, the administrator receives an email with error logs. Find more: `/docs <https://github.com/kbalko/flask_blog_app1/tree/master/docs>`_.
+In case of failure, the administrator receives an email with error logs. Find more `here <https://github.com/kbalko/flask_blog_app/tree/master/docs>`_.
 
 Apllication is integrated with:
 
