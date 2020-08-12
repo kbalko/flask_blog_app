@@ -1,3 +1,16 @@
+.. image:: https://travis-ci.com/kbalko/flask_blog_app.svg?branch=master
+   :target: https://travis-ci.com/kbalko/flask_blog_app
+
+.. image:: https://coveralls.io/repos/github/kbalko/flask_blog_app/badge.svg?branch=master
+   :target: https://coveralls.io/github/kbalko/flask_blog_app?branch=master
+
+.. image:: https://app.statuscake.com/button/index.php?Track=QjIa1aJ2zN&Days=1000&Design=1
+   :target: https://www.statuscake.com
+
+
+
+
+
 
 Microblog Flask App  & CI/CD
 =============================
