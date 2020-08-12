@@ -13,7 +13,11 @@ class LoginForm(FlaskForm):
 
 
 class RegistrationForm(FlaskForm):
-    username = StringField('Login', validators=[DataRequired()])
+    username = StringField(
+        'Login',
+        validators=[DataRequired(),
+                    Length(message=u'Długość min. 4 i max. 24 znaki',
+                           min=4, max=24)])
     email = StringField('Email', validators=[DataRequired(),
                         Email(message=u'Wpisz prawidłowy adres')])
     password = PasswordField(u'Hasło', validators=[DataRequired()])
@@ -42,7 +46,7 @@ class EditProfileForm(FlaskForm):
 
 class PostForm(FlaskForm):
     post = TextAreaField('Co u Ciebie?', validators=[
-        DataRequired(), Length(min=1, max=140)])
+        DataRequired(), Length(min=1, max=400)])
     submit = SubmitField(u'Podziel się')
 
 
