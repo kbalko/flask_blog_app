@@ -21,7 +21,7 @@ Flask `microblog <https://microflaskapp.herokuapp.com/devops>`_ application with
 
 
 The application allows you to register users, log in, edit your profile, add content, view other users' content, observe / not observe other users, and reset your password via e-mail verified with a token.
-In case of failure, the administrator receives an email with error logs. Find more `here <https://github.com/kbalko/flask_blog_app/tree/master/docs>`_.
+In case of failure, the administrator receives an email with error logs. Find out more `here <https://github.com/kbalko/flask_blog_app/tree/master/docs>`_.
 
 Apllication is integrated with:
 
