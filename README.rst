@@ -85,8 +85,6 @@ Getting started
     $ make test_cov
 
 
-  Tests are running automatically in TravisCI  after  pushing changes on Github.
-
 - Tests with Robot Framework and Selenium library:
 
   ::
