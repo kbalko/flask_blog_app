@@ -110,6 +110,3 @@ Getting started
     ...
     $ deactivate
 
-Process graph:
-
-![Image](https://raw.githubusercontent.com/kbalko/flask_blog_app/master/docs/pipeline.PNG)
