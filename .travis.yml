@@ -19,7 +19,7 @@ after_success:
 - coveralls
 deploy:
   provider: heroku
-  app: dry-brushlands-36461
+  app: enigmatic-woodland-07880
   api_key: "${HEROKU_API_KEY}"
 env:
   global:
