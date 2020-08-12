@@ -1,18 +1,11 @@
-.. image:: https://travis-ci.com/kbalko/flask_blog_app1.svg?branch=master
-    :target: https://travis-ci.com/kbalko/flask_blog_app1
-
-.. image:: https://coveralls.io/repos/github/kbalko/se_hello_printer_app/badge.svg?branch=master
-    :target: https://coveralls.io/github/kbalko/se_hello_printer_app?branch=master
-
-.. image:: https://app.statuscake.com/button/index.php?Track=mjo6Vaaxoz&Days=1&Design=1
-    :target: https://www.statuscake.com
+.. image:: https://travis-ci.com/kbalko/flask_blog_app.svg?token=U3sEfs3pru2iXvspnaeu&branch=master
+    :target: https://travis-ci.com/kbalko/flask_blog_app
 
 
 
-Simple Flask App
+Microblog Flask App
 ================
-
-Informacje ogólne
+General info
 -----------------
 
 Prosta aplikacja wyświetlająca imię i wiadomość w różnych formatach (podstrona `'/formaty' <https://dry-brushlands-36461.herokuapp.com/formaty?name=Tu+moze+byc+Twoje+imie&output=json>`_) z zajęć o Continuous Integration, Continuous Delivery i Continuous Deployment.:heavy_check_mark:
@@ -29,7 +22,7 @@ Aplikacja jest zintegrowana z:
 
 - Jenkins
 
-- `Heroku <https://enigmatic-woodland-07880.herokuapp.com>`_
+- `Heroku <https://microflaskapp.herokuapp.com>`_
 
 - `Statuscake <https://www.statuscake.com>`_
 
@@ -38,12 +31,12 @@ Linter tool:
 
 - Flake8
 
-Główne technologie
+Tech-stack
 ------------------
-- Python 2.7
-- Flask 1.1.2
-- SQLAlchemy 2.4.3
-- Bootstrap 3
+- Python
+- Flask
+- SQLAlchemy
+- Bootstrap
 
 Wszystkie zależności dostępne w pliku requirements.txt i test_requirements.txt
 
