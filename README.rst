@@ -1,5 +1,5 @@
 
-Microblog Flask App
+Microblog Flask App  & Continuous Integration/Continuous Deployment
 ================
 General info
 -----------------
