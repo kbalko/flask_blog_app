@@ -17,7 +17,7 @@ Microblog Flask App  & CI/CD
 General info
 -----------------
 
-Flask microblog application with Continuous Integration/Continuous Deployment.
+Flask `microblog <https://microflaskapp.herokuapp.com/devops>`_ application with Continuous Integration/Continuous Deployment.
 
 
 The application allows you to register users, log in, edit your profile, add content, view other users' content, observe / not observe other users, and reset your password via e-mail verified with a token.
