@@ -1,20 +1,16 @@
-.. image:: https://travis-ci.com/kbalko/flask_blog_app.svg?token=U3sEfs3pru2iXvspnaeu&branch=master
-    :target: https://travis-ci.com/kbalko/flask_blog_app
-
-
 
 Microblog Flask App
 ================
 General info
 -----------------
 
-Prosta aplikacja wyświetlająca imię i wiadomość w różnych formatach (podstrona `'/formaty' <https://dry-brushlands-36461.herokuapp.com/formaty?name=Tu+moze+byc+Twoje+imie&output=json>`_) z zajęć o Continuous Integration, Continuous Delivery i Continuous Deployment.:heavy_check_mark:
+Flask microblog application with Continuous Integration/Continuous Deployment.
 
-Na potrzeby projektu rozbudowałem ją do formy `mikrobloga <https://dry-brushlands-36461.herokuapp.com/devops>`_ na podstawie 'The Flask Mega-Tutorial' (miguelgrinberg.com).
-Aplikacja pozwala na rejestrację użytkowników, zalogowanie, edycje profilu, dodawanie treści, przeglądanie treści innych użytkowników, zaobserwowanie/nieobserwowanie innych użytkowników a także resetowanie hasła via e-mail weryfikowane tokenem.
-W razie awarii administrator dostaje wiadomość e-mail z logami błedu. Więcej dowiesz się z `/docs <https://github.com/kbalko/flask_blog_app1/tree/master/docs>`_.
 
-Aplikacja jest zintegrowana z:
+The application allows you to register users, log in, edit your profile, add content, view other users' content, observe / not observe other users, and reset your password via e-mail verified with a token.
+In case of failure, the administrator receives an email with error logs. Find more: `/docs <https://github.com/kbalko/flask_blog_app1/tree/master/docs>`_.
+
+Apllication is integrated with:
 
 - `TravisCI <https://travis-ci.com/github/kbalko/flask_blog_app>`_
 
@@ -38,148 +34,82 @@ Tech-stack
 - SQLAlchemy
 - Bootstrap
 
-Wszystkie zależności dostępne w pliku requirements.txt i test_requirements.txt
+All dependencies are store in requirements.txt and test_requirements.txt
 
-Uruchomienie
+Getting started
 ------------
 
-- Rozpoczynając pracę z projektem wykorzystujemy virtualenv. Hermetyczne środowisko dla pojedyńczej aplikacji w pythonie:
+- preparing a virtual environment
 
   ::
 
     # ubuntu, add to ~/.bashrc
     $ source /usr/local/bin/virtualenvwrapper.sh
 
-    # tworzymy hermetyczne środowisko dla bibliotek aplikacji:
     $ mkvirtualenv wsb-simple-flask-app
     $ pip install -r requirements.txt
     $ pip install -r test_requirements.txt
 
-  lub wykorzystując target z Makefile:
+  or just use target from Makefile:
 
   ::
 
-    # instalacja dependencies
+    # install dependencies
     $ make deps
 
-  Sprawdź: `documentację virtualenvwrappera <https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html>`_ oraz `biblioteki flask <http://flask.pocoo.org>`_.
 
-- Uruchamianie applikacji:
+- Run application:
 
   ::
 
-    # jako zwykły program
-    $ python main.py
-
-    # lub lub wykorzystując target z Makefile:
+    # target from Makefile:
     $ make run
 
-    #uruchamia komendę:
+    #runs the command:
     PYTHONPATH=. FLASK_APP=hello_world flask run
 
-- Uruchamianie testów (see: http://doc.pytest.org/en/latest/capture.html):
+- Running tests (see: http://doc.pytest.org/en/latest/capture.html):
 
   ::
 
     $ PYTHONPATH=. py.test
     $ PYTHONPATH=. py.test  --verbose -s
 
-  lub za pośrednictwem tergetów z pliku Makefile:
+  or just use target from Makefile:
 
   ::
 
-    #uruchamianie testów
     $ make test
     $ make_xunit
     $ make test_complexity
     $ make test_cov
 
-  tworzonych zgodnie z zasadą:
 
-  ::
+  Tests are running automatically in TravisCI  after  pushing changes on Github.
 
-    target: dependencies
-      system command(s)
-
-  na przykład:
-
-  ::
-
-    test_xunit:
-      PYTHONPATH=. py.test --verbose -s --cov=. --cov-report xml
-
-  Testy są uruchamiane automatycznie w TravisCI/Gitab po pushu na github/lab
-
-- Testy z Robot Framework i biblioteką Selenium:
+- Tests with Robot Framework and Selenium library:
 
   ::
 
     $ robot test.robot
 
-    # uruchomienie z działaniem w tle - bez widocznego okna przeglądarki
+    # without browser window
     $ robot -v BROWSER:headlessfirefox test.robot
-    # lub target z Makefile:
+    # target from Makefile:
     $ make robot_test
 
-  Testy w Robocie są uruchamiane automatycznie w TravisCI po pushu na github.
+  Tests are running automatically in TravisCI  after  pushing changes on Github.
 
-- Kontynuując pracę z projektem aktywujemy hermetyczne środowisko dla aplikacji py:
+- To continue work on the project
 
   ::
 
-    $ source /usr/local/bin/virtualenvwrapper.sh # nie trzeba, jeśli już w .bashrc
+    $ source /usr/local/bin/virtualenvwrapper.sh
     $ workon wsb-simple-flask-app
 
     ...
-
-    # deaktywacja virtualenv
     $ deactivate
 
+Process graph:
 
-Pomocnicze
-==========
-
-Ubuntu
-------
-
-- Instalacja python virtualenv i virtualenvwrapper:
-
-  ::
-
-    $ sudo pip install virtualenv
-    $ sudo pip install virtualenvwrapper
-
-- Instalacja dockera: `dockerce howto <https://docs.docker.com/install/linux/docker-ce/ubuntu/>`_
-
-- Przekazanie zmiennych do heroku:
-
-  ::
-
-    $ heroku config:add zmienna
-
-SQLAlchemy
-----------
-- Instalacja odbywa się automatycznie w ramach tergetu 'make deps' w Makefile.
-  Instalacja manualna:
-
-  ::
-
-   $ pip install flask-sqlalchemy
-
-   # database migrations
-   $ pip install flask-migrate
-
-- Kilka pomocnych podstawowych komend do obsługi bazy danych:
-
-  ::
-
-    # inicjalizacja
-    $ flask db init
-
-    # skrypt migracji
-    $ flask db migrate -m"comment"
-
-    # zapis zmian
-    $ flask upgrade
-
-`Dokumentacja SQLAlchemy <https://flask-sqlalchemy.palletsprojects.com/en/2.x/>`_
+![Image](https://raw.githubusercontent.com/kbalko/flask_blog_app/master/docs/pipeline.PNG)
