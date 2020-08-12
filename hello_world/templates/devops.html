@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block app_content %}
+    <div>
+        <img src="{{ url_for('static', filename='pipeline.PNG') }}"/>
+    </div>
+    <br>
+    <div class="container">
+        <img src="https://travis-ci.com/kbalko/flask_blog_app1.svg?branch=master">
+        <p>Aplikacja pozwalająca na rejestrację użytkowników, zalogowanie, edycje profilu, dodawanie treści, przeglądanie treści innych użytkowników, zaobserwowanie/nieobserwowanie innych użytkowników
+          a także resetowanie hasła via e-mail weryfikowane tokenem.<br>
+          W razie awarii administrator dostaje wiadomość e-mail z logami błedu.
+        </p>
+    </div>
+
+    <div class="container">
+      <h4>Proces testowy w CI/CD</h4>
+       <p>Proces testowy utrzymany jest w duchu Continous Testing - zautomatyzowania wykonywania testów w pipelinie w CI/CD.<br>
+        <b>Testy są automatycznie odpalane po każdym pushu do repozytorium w momencie gdy trafiają na Travis CI/Gitlab.</b><br>
+        O procesie testów dowiesz się więcej  <a href="https://github.com/kbalko/flask_blog_app1/blob/master/docs/process_tests.md">tutaj</a>.
+      </p>
+    </div>
+    <div class="container">
+      <h6>Aplikacja jest zintegrowana z:</h6>
+      <div class="container">
+       <li>TravisCI</li>
+       <li>Gitlab</li>
+       <li>Docker</li>
+       <li>Jenkis</li>
+       <li>Heroku</li>
+       <li>Statuscake</li>
+       <li>Coveralls</li>
+     </div>
+    </div>
+    <div class="container">
+      <h6>Główne technologie</h6>
+      <div class="container">
+        <li>Python 2.7</<li>
+        <li>Flask</<li>
+        <li>SQLAlchemy</<li>
+        <li>Bootstrap</<li>
+      </div>
+    </div><br>
+    <div class="container">
+      <h8>Zobacz całe repozytorium projektu na <a href="https://github.com/kbalko/flask_blog_app1">Githubie</a>.</h8>
+    </div>
+    <div class="container">
+      <p>
+        <form action="{{ url_for('app_button') }}" method="post">
+          {{ form.hidden_tag() }}
+          {{ form.submit(value='Przejdź do aplikacji', class_='btn btn-default') }}
+        </form>
+      </p>
+      <p>Nie musisz się rejestrować by sprawdzić funkcjonalność aplikacji.<br>
+         Login: Testowy<br>
+         Hasło: tester
+    </div><br>
+{% endblock %}

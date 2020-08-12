@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>Zaloguj</h1>
+    <div class="row">
+        <div class="col-md-4">
+            {{ wtf.quick_form(form) }}
+        </div>
+    </div>
+    <br>
+    <div class="container-left">
+     Możesz się <a id="registry" href="{{ url_for('register') }}">zarejestrować</a>.<br>
+     Hasło wypadło Ci z głowy? Możesz je <a id="reset" href="{{ url_for('reset_password_request') }}">zresetować</a>.<br>
+     Nie musisz się logować, żeby zobaczyć proces <a id="devops" href="{{ url_for('devops') }}">CI/CD</a>.
+   </div>
+{% endblock %}

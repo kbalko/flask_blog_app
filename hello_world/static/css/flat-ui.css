@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/lato-bold.eot");
+  src: url("../fonts/lato/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-bold.woff") format("woff"), url("../fonts/lato/lato-bold.ttf") format("truetype"), url("../fonts/lato/lato-bold.svg#latobold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/lato/lato-regular.eot");
+  src: url("../fonts/lato/lato-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/lato-regular.woff") format("woff"), url("../fonts/lato/lato-regular.ttf") format("truetype"), url("../fonts/lato/lato-regular.svg#latoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.72222;
+  color: #34495e;
+  background-color: #fff;
+}
+
+a {
+  color: #16a085;
+  text-decoration: none;
+  transition: .25s;
+}
+
+a:hover, a:focus {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+img {
+  margin-top: flex;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.1;
+  color: inherit;
+}
+
+
+h1,
+h2,
+h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+h4,
+h5,
+h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h6 {
+  font-weight: normal;
+}
+
+h1, .h1 {
+  font-size: 61px;
+}
+
+h2, .h2 {
+  font-size: 53px;
+}
+
+h3, .h3 {
+  font-size: 40px;
+}
+
+h4, .h4 {
+  font-size: 29px;
+}
+
+h5, .h5 {
+  font-size: 28px;
+}
+
+h6, .h6 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.72222;
+  margin: 0 0 15px;
+}
+
+.btn {
+  border: none;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4;
+  border-radius: 4px;
+  padding: 10px 15px;
+  -webkit-font-smoothing: subpixel-antialiased;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+
+.btn-default {
+  color: white;
+  background-color: #34495e;
+}
+
+.show > .dropdown-toggle.btn-default, .btn-default:hover, .btn-default.hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+  color: white;
+  background-color: #16a085;
+  border-color: #16a085;
+}
+
+
+label {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 2.3;
+}
+
+
+.form-control, .select2-search input[type="text"] {
+  border: 2px solid #bdc3c7;
+  color: #34495e;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.467;
+  padding: 8px 12px;
+  height: 42px;
+  border-radius: 6px;
+  box-shadow: none;
+  transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+.form-group.focus .form-control, .form-group.focus .select2-search input[type="text"], .select2-search .form-group.focus input[type="text"], .form-control:focus, .select2-search input[type="text"]:focus {
+  border-color: #1abc9c;
+  outline: 0;
+  box-shadow: none;
+}
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .checkbox,
+.has-error .checkbox-inline {
+  color: #e74c3c;
+}
+
+.has-error .form-control, .has-error .select2-search input[type="text"], .select2-search .has-error input[type="text"] {
+  color: #e74c3c;
+  border-color: #e74c3c;
+  box-shadow: none;
+}
+
+.help-block {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #6b7a88;
+}
+
+.pager {
+  background-color: #34495e;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+
+.pager li:first-child > a,
+.pager li:first-child > span {
+  border-left: none;
+  border-radius: 6px 0 0 6px;
+}
+
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: white;
+  padding: 9px 15px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 0 6px 6px 0;
+}
+
+.pager li > a:hover, .pager li > a:focus,
+.pager li > span:hover,
+.pager li > span:focus {
+  background-color: #16a085;
+}
+
+.navbar {
+  font-size: 16px;
+  min-height: 53px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0px;
+}
+
+.navbar .container,
+.navbar .container-fluid {
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+
+.navbar-brand {
+  font-size: 24px;
+  height: 53px;
+  font-weight: 700;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    line-height: 1.042;
+    padding: 14px 21px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -21px;
+  }
+}
+
+
+.navbar-nav > li > a {
+  font-size: 16px;
+  padding: 15px 0;
+  line-height: 23px;
+  font-weight: 700;
+  position: relative;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+}
+
+.navbar-inverse {
+  background-color: #34495e;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+  color: #1abc9c;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #1abc9c;
+  background-color: transparent;
+}
+
+.profil {
+  margin-top: 30px;
+}
+
+.posts {
+  word-break: break-word;
+}
