@@ -39,7 +39,7 @@ Tech-stack
 All dependencies are store in requirements.txt and test_requirements.txt
 
 Getting started
-------------
+---------------
 
 - preparing a virtual environment:
 
