@@ -107,4 +107,3 @@ Getting started
 
     ...
     $ deactivate
-
