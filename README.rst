@@ -22,6 +22,8 @@ Apllication is integrated with:
 
 - `Statuscake <https://www.statuscake.com>`_
 
+- `Coveralls <https://coveralls.io/github/kbalko/flask_blog_app>`_
+
 
 Linter tool:
 
