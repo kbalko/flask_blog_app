@@ -112,4 +112,4 @@ Getting started
 
 Process graph:
 
-![Image](docs/pipeline.PNG)
+![Image](https://raw.githubusercontent.com/kbalko/flask_blog_app/master/docs/pipeline.PNG)
