@@ -18,7 +18,7 @@ Po tej komendzie pliki trafiają do GitLaba.
 
 ### Proces testów
 
-Travis/Gitlab/Jenkis sprawdzają zgodność zależności z plików requirements.txt i test_requirements.txt. Następnie uruchamiane są testy jednostkowe, metryki pokrycia kodu i testy w Robot Framework. Po skryptach testowych na podstawie metryk pokrycia kodu uruchamiane jest narzędzie [Coveralls](https://coveralls.io/github/kbalko/se_hello_printer_app). Proces testów szerzej opisany jest w pliku /docs/proces_todo.md.
+Travis/Gitlab/Jenkis sprawdzają zgodność zależności z plików requirements.txt i test_requirements.txt. Następnie uruchamiane są testy jednostkowe, metryki pokrycia kodu i testy w Robot Framework. Po skryptach testowych na podstawie metryk pokrycia kodu uruchamiane jest narzędzie [Coveralls](https://coveralls.io/github/kbalko/flask_blog_app). Proces testów szerzej opisany jest w pliku /docs/proces_todo.md.
 
 ### Jenkins - 127.0.0.1:8080
 
@@ -43,7 +43,7 @@ Następnie dzięki odpowiednim targetom zawartym pliku Makefile  i dzięki pliko
  Kontener Dockera: https://hub.docker.com/r/kbalko/hello-world-printer
 
  ### Heroku
- Następuje deploy aplikacji na Heroku. Aplikcja dostępna dla Klienta pod [linkiem](https://dry-brushlands-36461.herokuapp.com/).
+ Następuje deploy aplikacji na Heroku. Aplikcja dostępna pod [linkiem](https://microflaskapp.herokuapp.com/).
 
  ### Monitorowanie StatusCake
  Aplikacja jest połączona z narzędziem StatusCake, które monitoruje czy strona jest aktywyna i wysyła alert e-mail do administratora jeśli strona nie odpowiada.
