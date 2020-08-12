@@ -1,6 +1,6 @@
 SERVICE_NAME=hello-world-printer
 MY_DOCKER_NAME=$(SERVICE_NAME)
-WEBSITE_PROD=https://dashboard.heroku.com/apps/enigmatic-woodland-07880
+WEBSITE_PROD=https://microflaskapp.herokuapp.com/
 
 .PHONY: test
 .DEFAULT_GOAL := test

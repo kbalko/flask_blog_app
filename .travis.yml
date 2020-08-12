@@ -19,7 +19,7 @@ after_success:
 - coveralls
 deploy:
   provider: heroku
-  app: enigmatic-woodland-07880
+  app: microflaskapp
   api_key: "${HEROKU_API_KEY}"
 env:
   global:
