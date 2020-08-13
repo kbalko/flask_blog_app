@@ -7,7 +7,7 @@ Library		SeleniumLibrary
 
 ${browser}                  Firefox
 ${website}                  https://microflaskapp.herokuapp.com/
-${other_user_page}          https://microflaskapp.herokuapp.com/Tester4
+${other_user_page}          https://microflaskapp.herokuapp.com/user/Tester4
 
 ${login_valid_but_taken}    Tester2
 ${login_valid_free}         Newlogin

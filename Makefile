@@ -22,7 +22,7 @@ test_xunit:
 	PYTHONPATH=. py.test -s --cov=. --junit-xml=test_results.xml
 
 test_robot:
-	robot -v BROWSER:headlessfirefox test.robot
+	robot --outputdir Outputs -v BROWSER:headlessfirefox test.robot
 
 test_complexity:
 	radon cc hello_world
