@@ -5,8 +5,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    DATABASE_URL = os.environ.get('DATABASE_URL') or \
-        'sqlite:///' + os.path.join(basedir, 'app.db')
+    DATABASE_URL = os.environ.get('DATABASE_URL') 
     conn = psycopg2.connect(DATABASE_URL, sslmode='require')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     POST_PER_PAGE = 10
