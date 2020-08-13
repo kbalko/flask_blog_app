@@ -50,7 +50,41 @@ Test 5 Fail user registration attepmt with taken login
    Page Should Contain   ${login_is_taken}
    Close browser
 
-Test 6 Fail user registration attepmt with invalid email
+Test 6 Fail user registration attepmt with too short login
+   Go to website
+   Go to registration form
+   Entering login: too short login
+   Entering email: valid, free
+   Entering valid password
+   Confirming password with valid password
+   Click submit button
+   Page Should Contain   ${login_is_short}
+   Close browser
+
+
+Test 7 Fail user registration attepmt with too long login
+   Go to website
+   Go to registration form
+   Entering login: too long login
+   Entering email: valid, free
+   Entering valid password
+   Confirming password with valid password
+   Click submit button
+   Page Should Contain   ${login_is_long}
+   Close browser
+
+Test 8 Fail user registration attepmt with invalid login (invalid characters)
+   Go to website
+   Go to registration form
+   Entering login: invalid characters
+   Entering email: valid, free
+   Entering valid password
+   Confirming password with valid password
+   Click submit button
+   Page Should Contain   ${login_is_invalid}
+   Close browser
+
+Test 9 Fail user registration attepmt with invalid email
    Go to website
    Go to registration form
    Entering login: valid, free
@@ -61,7 +95,7 @@ Test 6 Fail user registration attepmt with invalid email
    Page Should Contain   ${email_is_invalid}
    Close browser
 
-Test 7 Fail user registration attepmt with taken email
+Test 10 Fail user registration attepmt with taken email
    Go to website
    Go to registration form
    Entering login: valid, free
@@ -72,7 +106,7 @@ Test 7 Fail user registration attepmt with taken email
    Page Should Contain   ${email_is_taken}
    Close browser
 
-Test 8 Fail user registration attepmt - fail confirmation password
+Test 11 Fail user registration attepmt - fail confirmation password
    Go to website
    Go to registration form
    Entering login: valid, free
@@ -83,7 +117,7 @@ Test 8 Fail user registration attepmt - fail confirmation password
    Page Should Contain   ${different_pass}
    Close browser
 
-Test 9 Check if navbar '/explore' direction works
+Test 12 Check if navbar '/explore' direction works
    Go to website
    Logging with valid credentials
    Check if user is log in
@@ -91,7 +125,7 @@ Test 9 Check if navbar '/explore' direction works
    Back to index page
    Close browser
 
-Test 10 Check if navbar '/user/<username>' direction works
+Test 13 Check if navbar '/user/<username>' direction works
    Go to website
    Logging with valid credentials
    Check if user is log in
@@ -99,14 +133,14 @@ Test 10 Check if navbar '/user/<username>' direction works
    Back to index page
    Close Browser
 
-Test 11 Check if navbar 'logout' direction works
+Test 14 Check if navbar 'logout' direction works
    Go to website
    Logging with valid credentials
    Check if user is log in
    Click in '/logout' direction
    Close Browser
 
-Test 12 Check if '/edit_profile' direction and 'save'/'back' buttons works
+Test 15 Check if '/edit_profile' direction and 'save'/'back' buttons works
    Go to website
    Logging with valid credentials
    Check if user is log in
@@ -118,7 +152,7 @@ Test 12 Check if '/edit_profile' direction and 'save'/'back' buttons works
    Page Should Contain    ${user_page}
    Close Browser
 
-Test 13 Check if 'follow'/'unfollow' button works
+Test 16 Check if 'follow'/'unfollow' button works
    Go to website
    Logging with valid credentials
    Check if user is log in
@@ -129,7 +163,7 @@ Test 13 Check if 'follow'/'unfollow' button works
    Page Should Contain    ${unfollow}
    Close Browser
 
-Test 14 Check if user can add post
+Test 17 Check if user can add post
    Go to website
    Logging with valid credentials
    Check if user is log in
@@ -139,7 +173,7 @@ Test 14 Check if user can add post
    Page Should Contain    ${test_text}
    Close Browser
 
-Test 15 Fail attepmt to reset password with invalid email
+Test 18 Fail attepmt to reset password with invalid email
    Go to website
    Go to /reset_password_request
    Wait Until Element Is Visible    ${selector_email}
@@ -148,7 +182,7 @@ Test 15 Fail attepmt to reset password with invalid email
    Page Should Contain              ${email_is_invalid}
    Close Browser
 
-Test 16 Check if navbar '/devops' direction works
+Test 19 Check if navbar '/devops' direction works
    Go to website
    Go to /devops page by navbar
    Page Should Contain              ${devops_page}
@@ -156,7 +190,7 @@ Test 16 Check if navbar '/devops' direction works
    Page Should Not Contain              ${devops_page}
    Close Browser
 
-Test 17 Check if textlink '/devops' direction works
+Test 20 Check if textlink '/devops' direction works
    Go to website
    Go to /devops page by link
    Page Should Contain              ${devops_page}

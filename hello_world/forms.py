@@ -16,7 +16,7 @@ class RegistrationForm(FlaskForm):
     username = StringField(
         'Login',
         validators=[DataRequired(),
-                    Length(message=u'Długość musi mieć między 4 a 24 znaki',
+                    Length(message=u'Długość loginu: między 4 a 24 znaki',
                            min=4, max=24),
                     Regexp(regex=r'^\w+$',
                            message='Tylko litery A-Z i cyfry')])

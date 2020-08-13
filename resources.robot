@@ -11,6 +11,9 @@ ${other_user_page}          https://microflaskapp.herokuapp.com/Tester4
 
 ${login_valid_but_taken}    Tester2
 ${login_valid_free}         Newlogin
+${login_short}              Sho
+${login_long}               aloginniewiecejniz24znaki
+${login_invalid}            $^&*!??*
 ${pass_valid}               tester2
 ${pass_invalid}             Invalidpass
 ${email_valid_but_taken}    tester2@testy.pl
@@ -51,6 +54,9 @@ ${unfollow}             Nie obserwujesz użytkownika Tester4.
 ${follow}               Obserwujesz użytkownika Tester4
 ${afer_post}            Twój post został opublikowany.
 ${devops_page}          jest w duchu Continous Testing
+${login_is_short}       Długość loginu: między 4 a 24 znaki
+${login_is_long}        Długość loginu: między 4 a 24 znaki
+${login_is_invalid}     Tylko litery A-Z i cyfry
 
 *** Keywords ***
 
@@ -71,6 +77,19 @@ Entering login: valid, taken
 Entering login: valid, free
     Wait Until Element Is Visible      ${selector_login}
     Input Text     ${selector_login}   ${login_valid_free}
+
+Entering login: too short login
+    Wait Until Element Is Visible      ${selector_login}
+    Input Text     ${selector_login}   ${login_short}
+
+Entering login: too long login
+    Wait Until Element Is Visible      ${selector_login}
+    Input Text     ${selector_login}   ${login_long}
+
+
+Entering login: invalid characters
+    Wait Until Element Is Visible      ${selector_login}
+    Input Text     ${selector_login}   ${login_invalid}
 
 Entering valid password
     Input Text     ${selector_pass}    ${pass_valid}
