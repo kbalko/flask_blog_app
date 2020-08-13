@@ -7,7 +7,7 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY')
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'app.db')
-    conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+    conn = psycopg2.connect(SQLALCHEMY_DATABASE_URI, sslmode='require')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     POST_PER_PAGE = 10
     MAIL_SERVER = os.environ.get('MAIL_SERVER')
