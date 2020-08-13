@@ -2,7 +2,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField, TextAreaField
 from wtforms.validators import ValidationError, DataRequired, Email, EqualTo
-from wtforms.validators import Length
+from wtforms.validators import Length, Regexp
 from hello_world.models import User
 
 
@@ -16,8 +16,10 @@ class RegistrationForm(FlaskForm):
     username = StringField(
         'Login',
         validators=[DataRequired(),
-                    Length(message=u'Długość min. 4 i max. 24 znaki',
-                           min=4, max=24)])
+                    Length(message=u'Długość musi mieć między 4 a 24 znaki',
+                           min=4, max=24),
+                    Regexp(regex=r'^\w+$',
+                           message='Tylko litery A-Z i cyfry')])
     email = StringField('Email', validators=[DataRequired(),
                         Email(message=u'Wpisz prawidłowy adres')])
     password = PasswordField(u'Hasło', validators=[DataRequired()])
