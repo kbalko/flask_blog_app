@@ -32,7 +32,7 @@ Travis/Gitlab/Jenkis sprawdzają zgodność zależności z plików requirements.
 
 ### Docker
 
-Następnie dzięki odpowiednim targetom zawartym pliku Makefile  i dzięki plikom konfiguracyjnym budowany jest Docker, po zbudowaniu następuje push kontenera na hub.docker.com.
+Następnie dzięki odpowiednim targetom zawartym pliku Makefile  i dzięki plikom konfiguracyjnym budowany jest Docker, po zbudowaniu następuje push na hub.docker.com.
 
       # tergety w Makefile
       $ make docker_build
@@ -40,7 +40,7 @@ Następnie dzięki odpowiednim targetom zawartym pliku Makefile  i dzięki pliko
       $ make docker_stop
       $ make docker_push
 
- Kontener Dockera: https://hub.docker.com/r/kbalko/hello-world-printer
+ Docker image: https://hub.docker.com/r/kbalko/hello-world-printer
 
  ### Heroku
  Następuje deploy aplikacji na Heroku. Aplikcja dostępna pod [linkiem](https://microflaskapp.herokuapp.com/).
