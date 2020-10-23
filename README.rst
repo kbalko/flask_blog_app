@@ -61,7 +61,7 @@ Getting started
     # ubuntu, add to ~/.bashrc
     $ source /usr/local/bin/virtualenvwrapper.sh
 
-    $ mkvirtualenv wsb-simple-flask-app
+    $ mkvirtualenv simple-flask-app
     $ pip install -r requirements.txt
     $ pip install -r test_requirements.txt
 
@@ -118,7 +118,7 @@ Getting started
   ::
 
     $ source /usr/local/bin/virtualenvwrapper.sh
-    $ workon wsb-simple-flask-app
+    $ workon simple-flask-app
 
     ...
     $ deactivate
