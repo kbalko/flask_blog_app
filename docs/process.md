@@ -40,7 +40,7 @@ Następnie dzięki odpowiednim targetom zawartym pliku Makefile  i dzięki pliko
       $ make docker_stop
       $ make docker_push
 
- Docker image: https://hub.docker.com/r/kbalko/hello-world-printer
+ Docker image: https://hub.docker.com/r/kbalko/flask_blog_app
 
  ### Heroku
  Następuje deploy aplikacji na Heroku. Aplikcja dostępna pod [linkiem](https://microflaskapp.herokuapp.com/).

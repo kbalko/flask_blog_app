@@ -27,7 +27,7 @@ Apllication is integrated with:
 
 - `TravisCI <https://travis-ci.com/github/kbalko/flask_blog_app>`_
 
-- `Docker <https://hub.docker.com/r/kbalko/hello-world-printer>`_
+- `Docker <https://hub.docker.com/r/kbalko/flask_blog_app>`_
 
 - Jenkins
 
@@ -62,8 +62,12 @@ Getting started
     $ source /usr/local/bin/virtualenvwrapper.sh
 
     $ mkvirtualenv simple-flask-app
-    $ pip install -r requirements.txt
-    $ pip install -r test_requirements.txt
+
+- dependencies:
+  
+  :: 
+     $ pip install -r requirements.txt
+     $ pip install -r test_requirements.txt
 
   or just use target from Makefile:
 
