@@ -1,4 +1,4 @@
-SERVICE_NAME=hello-world-printer
+SERVICE_NAME=flask_blog_app
 MY_DOCKER_NAME=$(SERVICE_NAME)
 WEBSITE_PROD=https://microflaskapp.herokuapp.com/
 
